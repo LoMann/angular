@@ -3,12 +3,22 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: "Lato", sans-serif; }
 
-@import '~@angular/material/theming';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
-// Define a custom typography config that overrides the font-family as well as the
-// `headlines` and `body-1` levels.
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 30px;
+}
+
+.version-info {
+  font-size: 8pt;
+  float: right;
+  margin: 8px;
+}
+
+@import '~@angular/material/theming';
 $custom-typography: mat-typography-config(
   $font-family: 'Lato, sans-serif',
-  $headline: mat-typography-level(32px, 48px, 700),
-  $body-1: mat-typography-level(16px, 24px, 500)
 );
+@include mat-core($custom-typography);
