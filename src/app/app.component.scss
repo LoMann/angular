@@ -18,6 +18,86 @@ h1.example-app-name {
   flex: 1;
 }
 
+.example-spacer0 {
+  flex: 0 1 auto;
+}
+
 .example-spacer {
   flex: 1 1 auto;
+}
+
+.example-spacer1 {
+  flex: 0 0 80px;
+}
+
+.example-spacer2 {
+  flex: 0 0 130px;
+}
+
+.example-spacer3 {
+  flex: 0 0 10px;
+}
+
+.example-toolbar {
+  height: 125px;
+}
+
+.logo {
+  width: 331px;
+  height: 152px;
+}
+
+.imgbox {
+  display: relative;
+  height: 45vh;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+.centered {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.centered1 {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.imgbox1 {
+  display: relative;
+  height: 40%;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.middle {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 40%;
+  max-width: 100%;
+  max-height: 100vh;
 }

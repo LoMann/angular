@@ -14,11 +14,10 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
 import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MenuComponent],
+  declarations: [AppComponent, MenuComponent],
   imports: [
     CommonModule,
     BrowserModule,
@@ -37,7 +36,7 @@ import { MenuComponent } from './components/menu/menu.component';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));

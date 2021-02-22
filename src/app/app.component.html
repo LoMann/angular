@@ -1,8 +1,20 @@
 <div class="example-container">
-  <mat-toolbar color="primary" class="example-toolbar">
-    <mat-toolbar-row>
-      <span>Milco Responsive App</span>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row class="example-toolbar">
+      <div class="example-spacer0">
+        <img class="logo" src="../assets/milco_logo.png">
+      </div>
       <span class="example-spacer"></span>
+
+      <button mat-stroked-button class="example-spacer1">
+        Contact
+      </button>
+
+      <span class="example-spacer3"></span>
+
+      <button mat-stroked-button class="example-spacer2">
+        Customer Portal
+      </button>
 
       <button mat-icon-button (click)="snav.toggle()">
         <mat-icon>menu</mat-icon>
@@ -14,13 +26,37 @@
   <mat-sidenav-container class="example-sidenav-container">
     <mat-sidenav #snav [mode]="'side'">
       <mat-nav-list>
-        <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
+        <a mat-list-item routerLink=".">Home</a>
+        <a mat-list-item routerLink=".">About</a>
       </mat-nav-list>
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <p>body goes here</p>
-      <router-outlet></router-outlet>
+
+      <div class="imgbox">
+        <img class="title" src="../assets/title.jpg" alt="title">
+        <p class="centered">SPEED. PRECISION. COST EFFECTIVE.</p>
+        <!-- <p class="centered1">OUR CLIENTS GET ALL THREE</p> -->
+      </div>
+
+      <div>
+        <p>Milco Manufacturing is built on over 70 years of experience. Since our beginning in 1950, we have been a true
+          manufacturer and a leading full-service supplier of resistance welding equipment around the world. Because
+          Milco manufacturers and controls all parts from within, we are able to maintain a level of precision, quality
+          and
+          service that is unmatched in our industry.</p>
+      </div>
+      <div>
+        <button mat-stroked-button>
+          SCHEDULE A DEMO
+        </button>
+      </div>
+
+      <div class="imgbox1">
+        <img class="middle" src="../assets/middle.jpg" alt="middle">
+      </div>
+
+      <!-- <router-outlet></router-outlet> -->
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
