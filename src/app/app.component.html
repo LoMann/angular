@@ -1,18 +1,18 @@
-<div class="example-container">
+<div class="container">
   <mat-toolbar color="primary">
-    <mat-toolbar-row class="example-toolbar">
-      <div class="example-spacer0">
+    <mat-toolbar-row class="toolbar">
+      <div class="spacer0">
         <img class="logo" src="../assets/milco_logo.png">
       </div>
-      <span class="example-spacer"></span>
+      <span class="spacer"></span>
 
-      <button mat-stroked-button class="example-spacer1">
+      <button mat-stroked-button class="spacer1">
         Contact
       </button>
 
-      <span class="example-spacer3"></span>
+      <span class="spacer3"></span>
 
-      <button mat-stroked-button class="example-spacer2">
+      <button mat-stroked-button class="spacer2">
         Customer Portal
       </button>
 
@@ -23,7 +23,7 @@
     </mat-toolbar-row>
   </mat-toolbar>
 
-  <mat-sidenav-container class="example-sidenav-container">
+  <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #snav [mode]="'side'">
       <mat-nav-list>
         <a mat-list-item routerLink=".">Home</a>
@@ -32,31 +32,60 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-
-      <div class="imgbox">
+      <div class="title-box">
         <img class="title" src="../assets/title.jpg" alt="title">
-        <p class="centered">SPEED. PRECISION. COST EFFECTIVE.</p>
-        <!-- <p class="centered1">OUR CLIENTS GET ALL THREE</p> -->
       </div>
 
-      <div>
-        <p>Milco Manufacturing is built on over 70 years of experience. Since our beginning in 1950, we have been a true
+      <div class="intro">
+        <p class="text">Milco Manufacturing is built on over 70 years of experience. Since our beginning in 1950, we
+          have been a true
           manufacturer and a leading full-service supplier of resistance welding equipment around the world. Because
           Milco manufacturers and controls all parts from within, we are able to maintain a level of precision, quality
           and
           service that is unmatched in our industry.</p>
       </div>
-      <div>
+
+      <div class="intro">
         <button mat-stroked-button>
           SCHEDULE A DEMO
         </button>
       </div>
 
-      <div class="imgbox1">
+
+      <div class="title-box">
         <img class="middle" src="../assets/middle.jpg" alt="middle">
       </div>
 
-      <!-- <router-outlet></router-outlet> -->
+      <div class="intro">
+        <p class="header"> BUILDING ON SUCCESS </p>
+      </div>
+
+      <div class="intro">
+        <p class="text">Founded in 1950, Milco Manufacturing has grown into one of the leading full-service suppliers of
+          resistance
+          welding equipment in the world. In recent years, we’ve applied the skills and knowledge we’ve developed
+          over half a century to offerings for the Defense and Alternative Energy Industries.</p>
+      </div>
+
+      <div class="intro">
+        <button mat-stroked-button>
+          LEARN MORE
+        </button>
+      </div>
+
+      <br />
+
+      <div class="intro">
+        <p class="header"> OUR BRANDS </p>
+      </div>
+
+      <div class="title-box">
+        <img class="middle" src="../assets/footer.png" alt="footer">
+      </div>
+
+      <div class="footer">
+
+      </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
