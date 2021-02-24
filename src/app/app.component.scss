@@ -12,7 +12,7 @@
   flex: 1;
 }
 
-.spacer0 {
+.logo-container {
   flex: 0 1 auto;
 }
 
@@ -20,12 +20,33 @@
   flex: 1 1 auto;
 }
 
-.spacer1 {
-  flex: 0 0 80px;
+.contact {
+  flex: 0 0 90px;
 }
 
-.spacer2 {
-  flex: 0 0 130px;
+.customer {
+  flex: 0 0 150px;
+}
+
+.menu-btn {
+  border-radius: 25px;
+  border-width: medium;
+  border-color: black;
+
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.body-btn {
+  border-radius: 25px;
+  border-width: medium;
+  background-color: #4d4d4d;
+  color: white;
+
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 .spacer3 {
@@ -33,12 +54,12 @@
 }
 
 .toolbar {
-  height: 125px;
+  height: 100px;
 }
 
 .logo {
-  width: 331px;
-  height: 152px;
+  width: 280px;
+  height: 130px;
 }
 
 .title-box {
@@ -81,15 +102,8 @@
   font-size: xx-large;
   text-align: center;
   font-family: "Lato", sans-serif;
-  color: gray;
+  color: #4d4d4d;
   font-weight: bold;
-}
-
-.footer {
-  height: 110px;
-  background-color: gray;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .footer-text {
@@ -99,4 +113,23 @@
   font-family: "Lato", sans-serif;
   font-size: medium;
   color: white;
+}
+
+.test {
+  margin-top: 20px;
+  max-width: 80%;
+  background-color: lightgray;
+  border: 2px solid lightgray;
+  border-radius: 7px 7px 7px 7px;
+}
+
+.footer {
+  height: 110px;
+  background-color: #4d4d4d;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer-icons {
 }
