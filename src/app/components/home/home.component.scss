@@ -64,10 +64,11 @@
     height: 130px;
 }
 
-.title-box {
+.img-box {
     flex: 1;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .title {
@@ -114,4 +115,28 @@
     background-color: lightgray;
     border: 2px solid lightgray;
     border-radius: 7px 7px 7px 7px;
+}
+
+.philosophy {
+    position: absolute;
+    top: 35%;
+    left: 14%;
+}
+
+.product {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+}
+
+.study {
+    position: absolute;
+    top: 35%;
+    left: 77%;
+}
+
+.temp {
+    max-width: 64%;
+    width: 64%;
+    height: auto;
 }
