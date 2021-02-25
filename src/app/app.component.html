@@ -6,13 +6,13 @@
       </div>
       <span class="spacer"></span>
 
-      <button mat-stroked-button class="contact menu-btn">
+      <button mat-stroked-button class="contact menu-btn" routerLink="contact">
         CONTACT
       </button>
 
       <span class="spacer3"></span>
 
-      <button mat-stroked-button class="customer menu-btn">
+      <button mat-stroked-button class="customer menu-btn" routerLink="portal">
         CUSTOMER PORTAL
       </button>
 
@@ -32,8 +32,7 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <app-home></app-home>
-      <app-footer></app-footer>
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
