@@ -8,6 +8,7 @@
     "build:prod": "ng build --prod && node compress.js",
     "analyze": "ng build --stats-json && webpack-bundle-analyzer ./dist/milco/stats.json",
     "test": "ng test",
+    "test:ci": "ng test --watch=false --browsers=ChromeHeadlessCustom",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

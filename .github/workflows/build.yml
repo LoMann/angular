@@ -36,7 +36,7 @@ jobs:
       - name: npm test
         # using "test" on PIPESTATUS to check that "npm run test:ci" passed. If the order of the piped commands adjust
         # the index of #PIPESTATUS will need to also.
-        run: npm run test | (echo -en "TEST_OUTPUT<<EOF" && cat - && echo "EOF") | tee -a $GITHUB_ENV; test ${PIPESTATUS[0]} -eq 0
+        run: npm run test:ci | (echo -en "TEST_OUTPUT<<EOF" && cat - && echo "EOF") | tee -a $GITHUB_ENV; test ${PIPESTATUS[0]} -eq 0
 
       - name: npm build
         run: npm run build:prod
