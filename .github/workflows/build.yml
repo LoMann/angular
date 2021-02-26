@@ -1,0 +1,48 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: npm install
+        run: npm install
+
+      - name: npm lint
+        run: npm run lint
+
+      - name: npm test
+        # using "test" on PIPESTATUS to check that "npm run test:ci" passed. If the order of the piped commands adjust
+        # the index of #PIPESTATUS will need to also.
+        run: npm run test | (echo -en "TEST_OUTPUT<<EOF" && cat - && echo "EOF") | tee -a $GITHUB_ENV; test ${PIPESTATUS[0]} -eq 0
+
+      - name: npm build
+        run: npm run build:prod
+
+    env:
+        cache-name: cache-node-modules
+        CI_REPO_OWNER : github.com/LoMann/milco-angular
+        CI_REPO_NAME: github.com/LoMann/milco-angular
+        CI_BRANCH_BASE: master
