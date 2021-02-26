@@ -9,32 +9,30 @@
 			"VARIANT": "14"
 		}
 	},
-
 	// Set *default* container specific settings.json values on container create.
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash",
-    "editor.detectIndentation": true,
-    "editor.tabSize": 4,
-    "editor.wordWrap": "off"
- },
-
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"editor.detectIndentation": true,
+		"editor.tabSize": 4,
+		"editor.wordWrap": "off"
+	},
 	// Add the IDs of extensions you want installed when the container is created.
-  "extensions": [
-    "dbaeumer.vscode-eslint",
-    "ms-vscode.vscode-typescript-tslint-plugin",
-    "angular.ng-template",
-    "johnpapa.angular2",
-    "natewallace.angular2-inline",
-    "rbbit.typescript-hero",
-    "msjsdiag.debugger-for-chrome"
- ],
-
+	"extensions": [
+		"dbaeumer.vscode-eslint",
+		"ms-vscode.vscode-typescript-tslint-plugin",
+		"angular.ng-template",
+		"johnpapa.angular2",
+		"natewallace.angular2-inline",
+		"rbbit.typescript-hero",
+		"msjsdiag.debugger-for-chrome"
+	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [4200],
-
+	"forwardPorts": [
+		4200,
+		8888
+	],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "npm install",
-
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "node"
 }
