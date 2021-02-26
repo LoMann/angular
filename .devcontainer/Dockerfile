@@ -14,3 +14,13 @@ FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:0-${VARIANT}
 
 # [Optional] Uncomment if you want to install more global node packages
 # RUN su node -c "npm install -g <your-package-list -here>"
+
+# Set the Chrome repo.
+RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
+  && echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list
+
+# Install Chrome.
+RUN apt-get update && apt-get -y install google-chrome-stable
+
+# # This line is to tell karma-chrome-launcher where Google Chrome was downloaded and installed to.
+ENV CHROME_BIN /usr/bin/google-chrome-stable
