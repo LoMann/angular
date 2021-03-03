@@ -118,24 +118,28 @@
 
 .philosophy {
   position: absolute;
-  top: 35%;
-  left: 14%;
+  top: 34%;
+  left: 15%;
 }
 
 .product {
   position: absolute;
-  top: 35%;
+  top: 34%;
   left: 45%;
 }
 
 .study {
   position: absolute;
-  top: 35%;
+  top: 34%;
   left: 77%;
 }
 
 .temp {
-  max-width: 64%;
-  width: 64%;
+  max-width: 40%;
+  width: 40%;
   height: auto;
+}
+
+.cls-1 {
+  fill: white;
 }
