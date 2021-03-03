@@ -2,7 +2,9 @@
   <mat-toolbar color="primary">
     <mat-toolbar-row class="toolbar">
       <div class="logo-container">
-        <img class="logo" src="../assets/milco_trans.png">
+        <a href="home">
+          <img class="logo" src="../assets/milco_trans.png">
+        </a>
       </div>
       <span class="spacer"></span>
 
@@ -26,8 +28,8 @@
   <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #snav [mode]="'side'">
       <mat-nav-list>
-        <a mat-list-item routerLink="." class="nav-menu-item">Home</a>
-        <a mat-list-item routerLink="." class="nav-menu-item">About</a>
+        <a mat-list-item routerLink="home" class="nav-menu-item">Home</a>
+        <a mat-list-item routerLink="about" class="nav-menu-item">About</a>
       </mat-nav-list>
     </mat-sidenav>
 
