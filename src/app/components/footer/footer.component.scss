@@ -15,11 +15,37 @@
 .footer {
   height: 110px;
   background-color: #4d4d4d;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
 }
 
-.footer-icons {
-  column-count: 3;
+.facebook-icon {
+  position: absolute;
+  top: 15%;
+  left: 6%;
+}
+
+.twitter-icon {
+  position: absolute;
+  top: 15%;
+  left: 14%;
+}
+
+.linked-icon {
+  position: absolute;
+  top: 15%;
+  left: 24%;
+}
+
+.footer-icon {
+  position: relative;
+}
+
+.shape {
+  fill: white;
 }
