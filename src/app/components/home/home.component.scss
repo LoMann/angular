@@ -64,11 +64,10 @@
 }
 
 .img-box {
-  flex: 1;
+  flex: 1 1 auto;
   margin: 0;
   padding: 0;
   position: relative;
-  display: inline-block;
 }
 
 .middle {
@@ -77,6 +76,15 @@
   padding: 0;
   display: block;
   max-width: 100%;
+  height: auto;
+}
+
+.bottom {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  display: block;
   height: auto;
 }
 
@@ -159,7 +167,7 @@
   font-family: "Lato", sans-serif;
   font-size: medium;
   position: absolute;
-  top: 67%;
+  top: 69%;
   left: 14%;
   max-width: 11%;
   width: 11%;
@@ -172,7 +180,7 @@
   font-family: "Lato", sans-serif;
   font-size: medium;
   position: absolute;
-  top: 67%;
+  top: 69%;
   left: 44%;
   max-width: 11%;
   width: 11%;
@@ -180,8 +188,12 @@
 }
 
 .study-text {
+  color:white;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: medium;
   position: absolute;
-  top: 67%;
+  top: 69%;
   left: 76%;
   max-width: 11%;
   width: 11%;
